@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "shadytweaks",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "SomeShadyTweaks",
+  "description": "SomeOrdinaryTweaks but now a utility client /s",
   "authors": [
     "Maheesha"
   ],
@@ -13,17 +13,20 @@
     "sources": "https://github.com/MaheEvil/Fabric-Example-Mod-Parchment-QF"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MPL-2.0",
+  "icon": "assets/shadytweaks/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.maheevil.example.ExampleMod"
+      "io.github.maheevil.shadytweaks.SomeShadyTweaksMod"
+    ],
+    "modmenu": [
+      "io.github.maheevil.shadytweaks.config.ModMenuIntegration"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "shadytweaks.mixins.json"
   ],
 
   "depends": {
